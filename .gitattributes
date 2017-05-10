@@ -1,0 +1,5 @@
+.* export-ignore
+*.md export-ignore
+Tests/* export-ignore
+* linguist-vendored
+*.js linguist-vendored=false
