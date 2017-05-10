@@ -23,7 +23,7 @@ class HighlightDemoController extends Controller
 <h1>MesHighlightBundle Demo</h1>
 
 <p>PHP:</p>
-{{Resources/demo/demo.php}}
+{{Resources/demo/php.txt}}
 
 <hr />
 
@@ -71,11 +71,11 @@ export  $initHighlight;
 
 <hr />
 <p>SQL:</p>
-{{Resources/demo/demo.sql}}
+{{Resources/demo/sql.txt}}
 
 <hr />
 <p>JSON:</p>
-{{Resources/demo/demo.json}}
+{{Resources/demo/json.txt}}
 EOT;
 
     /**
