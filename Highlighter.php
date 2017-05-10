@@ -29,12 +29,12 @@ class Highlighter implements HighlighterInterface
     /**
      * @var string
      */
-    private $leftDelimiter = '{{';
+    private $leftDelimiter;
 
     /**
      * @var string
      */
-    private $rightDelimiter = '}}';
+    private $rightDelimiter;
 
     /**
      * @var array
@@ -51,15 +51,19 @@ class Highlighter implements HighlighterInterface
      *
      * @param array $languages
      * @param $root
+     * @param $leftDelimiter
+     * @param $rightDelimiter
      */
-    public function __construct(array $languages, $root)
+    public function __construct(array $languages, $root, $leftDelimiter, $rightDelimiter)
     {
+        $this->leftDelimiter = $leftDelimiter;
+        $this->rightDelimiter = $rightDelimiter;
+        $this->root = $root;
+
         $this->h = new \Highlight\Highlighter();
 
         // Set the languages you want to detect automatically.
         $this->addSupportedLanguages($languages);
-
-        $this->root = $root;
     }
 
     /**

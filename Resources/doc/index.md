@@ -45,6 +45,8 @@ and ```highlighter_highlight```.
 _highlight:
     resource: "@MesHighlightBundle/Resources/config/routing/highlight.xml"
     prefix: /_highlight
+    left_delimiter: "{{"
+    right_delimiter: "}}"
 ```
 
 and go to http://[YOUR HOST]/_highlight/highlight-demo to see some highlighting examples.

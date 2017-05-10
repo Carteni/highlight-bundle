@@ -65,5 +65,7 @@ class MesHighlightExtension extends ConfigurableExtension
 
         $container->setParameter('mes_highlight.supported_languages', $mergedConfig['supported_languages']);
         $container->setParameter('mes_highlight.root_path', $mergedConfig['root_path']);
+        $container->setParameter('mes_highlight.left_code_delimiter', $mergedConfig['left_delimiter']);
+        $container->setParameter('mes_highlight.right_code_delimiter', $mergedConfig['right_delimiter']);
     }
 }

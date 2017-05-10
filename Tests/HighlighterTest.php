@@ -25,7 +25,7 @@ class HighlighterTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->h = new Highlighter(array('php'), __DIR__);
+        $this->h = new Highlighter(array('php'), __DIR__, '{{', '}}');
 
         $this->h->addSupportedLanguages(array('js'));
     }

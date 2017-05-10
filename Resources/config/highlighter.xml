@@ -8,6 +8,8 @@
         <service id="mes_highlight.highlighter" class="Mes\Misc\HighlightBundle\Highlighter">
             <argument>%mes_highlight.supported_languages%</argument> <!-- supported languages -->
             <argument>%mes_highlight.root_path%</argument> <!-- root path to code-files location  -->
+            <argument>%mes_highlight.left_code_delimiter%</argument> <!-- left delimiter for code to highlight -->
+            <argument>%mes_highlight.right_code_delimiter%</argument> <!-- right delimiter for code to highlight  -->
         </service>
     </services>
 

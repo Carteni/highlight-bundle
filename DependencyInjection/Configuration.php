@@ -68,6 +68,14 @@ class Configuration implements ConfigurationInterface
                         ->example('root_path: "%kernel.root_dir%"')
                         ->defaultValue($this->rootPath)
                     ->end()
+                    ->scalarNode('left_delimiter')
+                        ->info('Left delimiter for code to highlight')
+                        ->defaultValue('{{')
+                    ->end()
+                    ->scalarNode('right_delimiter')
+                        ->info('Right delimiter for code to highlight')
+                        ->defaultValue('}}')
+                    ->end()
                  ->end();
 
         return $treeBuilder;
