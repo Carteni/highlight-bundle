@@ -58,6 +58,8 @@ Step 4: Configure the Bundle (optional)
 mes_highlight:
     supported_languages: ["php", "xml", "twig", "javascript", "sql", "json"]
     root_path: "%kernel.root_dir%/Resources/"
+    left_delimiter: "{{"
+    right_delimiter: "{}"
 ```
 
 Examples
