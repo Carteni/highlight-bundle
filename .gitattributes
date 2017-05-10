@@ -1,3 +1,5 @@
 .* export-ignore
 *.md export-ignore
 Tests/* export-ignore
+Resources/public/styles/* linguist-vendored
+Resources/doc* linguist-documentation
