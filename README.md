@@ -8,7 +8,8 @@
 [![Build Status](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/build-status/master)
+[![Latest Unstable Version](https://poser.pugx.org/carteni/highlight-bundle/v/unstable)](https://packagist.org/packages/carteni/highlight-bundle)
+[![Latest Stable Version](https://poser.pugx.org/carteni/highlight-bundle/v/stable)](https://packagist.org/packages/carteni/highlight-bundle)
 [![License](https://poser.pugx.org/carteni/crypto-bundle/license)][1]
 
 Step 1: Download the Bundle
@@ -82,3 +83,4 @@ Issues are tracked in the [Github issue tracker][4].
 [2]: http://www.highlightjs.org/
 [3]: ./Resources/doc/index.md
 [4]: https://github.com/Carteni/highlight-bundle/issues
+[5]: https://packagist.org/packages/carteni/highlight-bundle
