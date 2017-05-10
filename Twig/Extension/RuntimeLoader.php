@@ -42,7 +42,7 @@ class RuntimeLoader implements \Twig_RuntimeLoaderInterface
      */
     public function load($class)
     {
-        if (Highlight_RuntimeExtension::class === $class) {
+        if (HighlightRuntimeExtension::class === $class) {
             return new $class($this->highlighter);
         }
     }

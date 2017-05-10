@@ -16,7 +16,7 @@ use Mes\Misc\HighlightBundle\HighlighterInterface;
 /**
  * Class Highlight_RuntimeExtension.
  */
-class Highlight_RuntimeExtension extends \Twig_Extension
+class HighlightRuntimeExtension extends \Twig_Extension
 {
     /**
      * @var HighlighterInterface

@@ -91,7 +91,7 @@ EOT;
              ->setRootPath($root);
 
         return $this->render('MesHighlightBundle::demo.html.twig', array(
-            'content' => $this->demoContent
+            'content' => $this->demoContent,
         ));
     }
 }

@@ -23,11 +23,11 @@ class HighlightExtension extends \Twig_Extension
     {
         return array(
             new \Twig_SimpleFilter('highlighter_searchPatternAndHighlight', array(
-                Highlight_RuntimeExtension::class,
+                HighlightRuntimeExtension::class,
                 'searchPatternAndHighlight',
             )),
             new \Twig_SimpleFilter('highlighter_highlight', array(
-                Highlight_RuntimeExtension::class,
+                HighlightRuntimeExtension::class,
                 'highlight',
             )),
         );
