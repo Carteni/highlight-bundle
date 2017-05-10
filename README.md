@@ -4,6 +4,7 @@
 
 **MesHighlightBundle** is based on [scrivo/highlight.php][1] library, a port of [highlight.js][2] by Ivan Sagalaev to PHP.
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/f5ce9d83-a2f4-4441-a028-2fa7b8f59ba4/mini.png)](https://insight.sensiolabs.com/projects/f5ce9d83-a2f4-4441-a028-2fa7b8f59ba4)
 [![Build Status](https://travis-ci.org/Carteni/highlight-bundle.svg?branch=master)](https://travis-ci.org/Carteni/highlight-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/?branch=master)
