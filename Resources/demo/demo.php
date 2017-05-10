@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Class HighlightDemoController.
  */
-class demo extends Controller
+class Demo extends Controller
 {
     /**
      * @return Response
