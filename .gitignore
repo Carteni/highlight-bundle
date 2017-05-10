@@ -4,4 +4,3 @@ phpunit.xml
 .php_cs.cache
 /.phpunit
 coverage
-coverage.clover

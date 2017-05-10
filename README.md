@@ -7,6 +7,7 @@
 [![Build Status](https://travis-ci.org/Carteni/highlight-bundle.svg?branch=master)](https://travis-ci.org/Carteni/highlight-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Carteni/highlight-bundle/build-status/master)
+[![License](https://poser.pugx.org/carteni/crypto-bundle/license)][1]
 
 Step 1: Download the Bundle
 ---------------------------
