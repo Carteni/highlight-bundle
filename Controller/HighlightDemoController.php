@@ -32,10 +32,6 @@ class HighlightDemoController extends Controller
         $this->get('mes_highlight.highlighter')
              ->setRootPath($root);
 
-        // Add js language for highlighting.
-        /*$this->get('mes_highlight.highlighter')
-             ->addSupportedLanguages(array('sql','json'));*/
-
         $content = <<<'CODE'
 <h1>MesHighlightBundle Demo</h1>
 
