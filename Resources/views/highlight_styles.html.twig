@@ -1,0 +1,16 @@
+{% block highlight_style_1 %}
+    <style type="text/css">
+        .linenum {
+            font-weight:normal !important;
+            color:{% block linenum_color %}#999999{% endblock %};
+            text-align: right;
+            display: inline-block;
+            width: 1em;
+            margin-right:1em;
+        }
+    </style>
+{% endblock %}
+
+{% block highlight_style_2 %}
+    <link rel="stylesheet" type="text/css" href="{{ asset("bundles/meshighlight/styles/" ~ style|default("github.css")) }}">
+{% endblock %}

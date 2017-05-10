@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {% embed "MesHighlightBundle::highlight_styles.html.twig" with {"style": "rainbow.css"} only %}
+
+        {# customize .linenum style #}
+        {% block linenum_color "#999900" %}
+
+        {% block highlight_style_1 %}
+            {{ parent() }}
+        {% endblock %}
+
+        {% block highlight_style_2 %}
+            {{  parent() }}
+        {% endblock %}
+
+    {% endembed %}
+
+{% endblock %}
+
+{% block body %}
+    {% include "MesHighlightBundle::highlight.html.twig" with {"highlight": content } only %}
+{% endblock %}
