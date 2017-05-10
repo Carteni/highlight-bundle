@@ -45,7 +45,7 @@ class MesHighlightExtension extends ConfigurableExtension
     /**
      * @codeCoverageIgnore
      *
-     * @return string|boolean
+     * @return string|bool
      */
     public function getXsdValidationBasePath()
     {
