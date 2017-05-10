@@ -130,7 +130,9 @@ HTML;
      */
     public function addSupportedLanguages(array $supportedLanguages)
     {
-        $this->h->setAutodetectLanguages($this->supportedLanguages = array_merge($this->supportedLanguages, $supportedLanguages));
+        $this->supportedLanguages = array_merge($this->supportedLanguages, $supportedLanguages);
+
+        $this->h->setAutodetectLanguages($this->supportedLanguages);
     }
 
     /**
@@ -141,7 +143,7 @@ HTML;
     protected function resolveResource($resource)
     {
         if (is_file($this->root.$resource)) {
-            $resource = @file_get_contents($this->root.$resource);
+            $resource = file_get_contents($this->root.$resource);
         }
 
         return trim($resource);

@@ -13,26 +13,13 @@ namespace Mes\Misc\HighlightBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Process\Process;
 
 /**
  * Class HighlightDemoController.
  */
 class HighlightDemoController extends Controller
 {
-    /**
-     * @return Response
-     */
-    public function highlightDemoAction()
-    {
-        $root = dirname($this->get('kernel')
-                             ->locateResource('@MesHighlightBundle/MesHighlightBundle.php'));
-
-        // Change root path for "code files".
-        $this->get('mes_highlight.highlighter')
-             ->setRootPath($root);
-
-        $content = <<<'CODE'
+    private $demoContent = <<<'EOT'
 <h1>MesHighlightBundle Demo</h1>
 
 <p>PHP:</p>
@@ -89,10 +76,22 @@ export  $initHighlight;
 <hr />
 <p>JSON:</p>
 {{Resources/demo/demo.json}}
-CODE;
+EOT;
+
+    /**
+     * @return Response
+     */
+    public function highlightDemoAction()
+    {
+        $root = dirname($this->get('kernel')
+                             ->locateResource('@MesHighlightBundle/MesHighlightBundle.php'));
+
+        // Change root path for "code files".
+        $this->get('mes_highlight.highlighter')
+             ->setRootPath($root);
 
         return $this->render('MesHighlightBundle::demo.html.twig', array(
-            'content' => $content,
+            'content' => $this->demoContent
         ));
     }
 }
