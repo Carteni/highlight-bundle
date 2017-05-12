@@ -3,17 +3,6 @@
     "description": "A port of highlight.js by Ivan Sagalaev to PHP",
     "keywords": [],
     "type": "symfony-bundle",
-    "require": {
-        "php": "^5.5.9 || ^7.0",
-        "symfony/framework-bundle": "3.0.*",
-        "scrivo/highlight.php": "^9"
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^1.11",
-        "symfony/console": "3.0.*",
-        "symfony/phpunit-bridge": "3.0.*",
-        "phpunit/phpunit": "~4.8|~5.0"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -26,5 +15,16 @@
         "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "require": {
+        "php": "^5.5.9 || ^7.0",
+        "symfony/framework-bundle": "^3.0",
+        "scrivo/highlight.php": "^9"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.11",
+        "symfony/console": "^3.0",
+        "symfony/phpunit-bridge": "^3.0",
+        "phpunit/phpunit": "~4.8|~5.0"
     }
 }
