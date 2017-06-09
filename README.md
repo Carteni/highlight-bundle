@@ -16,7 +16,7 @@ Step 1: Download the Bundle
 ---------------------------
 
 ```console
-$ composer require carteni/mes-highlight
+$ composer require carteni/highlight-bundle
 ```
 
 Step 2: Enable the Bundle
@@ -59,7 +59,7 @@ mes_highlight:
     supported_languages: ["php", "xml", "twig", "javascript", "sql", "json"]
     root_path: "%kernel.root_dir%/Resources/"
     left_delimiter: "{{"
-    right_delimiter: "{}"
+    right_delimiter: "}}"
 ```
 
 Examples
